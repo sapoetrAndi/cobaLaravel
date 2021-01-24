@@ -1,0 +1,1 @@
+file yang berada di folder ini adalah template view untuk keperluan templating agar tampilan bisa digunaan ulang
