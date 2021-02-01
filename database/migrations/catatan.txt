@@ -1,0 +1,1 @@
+folder migration berfungsi untuk membuat table di laravel

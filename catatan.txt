@@ -1,0 +1,18 @@
+laravel command
+
+php artisan serve -> untuk menjalankan server laravel
+php artisan make -> untuk membuat sesuatu
+php artisan make:controller PagesController -> untuk membuat controller
+php artisan make:controller MahasiswaController --resource -> parameter --resource untuk membuat method-method default seperti CRUD dari laravel
+php artisan migrate -> melakukan migrasi db di laravel
+php artisan migrate:rollback -> membatalkan migrasi terakhir db di laravel
+php artisan make:migration create_students_table
+php artisan make:model Student
+dump()/dd -> untuk melihat isi variabel/object
+code . -> untuk membuka vscode dari cmd
+
+
+
+
+vscode command
+CTRL + P -> untuk menccari file

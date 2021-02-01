@@ -14,8 +14,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-//
-Route::get('/', function () {
+// untuk menampilkan view sederhana tanpa proses bisnis yang kompleks
+/* Route::get('/', function () {
 
     //mengembalikan view dari halaman index
     return view('index');
@@ -34,4 +34,12 @@ Route::get('/mahasiswa', function () {
 
     //mengembalikan view dari halaman mahasiswa
     return view('mahasiswa');
-});
+}); */
+
+//route ini akan mengarah ke controller PagesController method Home
+Route::get('/', 'PagesController@home');
+//route ini akan mengarah ke controller PagesController method about
+Route::get('/about', 'PagesController@about');
+
+
+Route::get('/mahasiswa', 'MahasiswaController@index');
