@@ -4,10 +4,13 @@ php artisan serve -> untuk menjalankan server laravel
 php artisan make -> untuk membuat sesuatu
 php artisan make:controller PagesController -> untuk membuat controller
 php artisan make:controller MahasiswaController --resource -> parameter --resource untuk membuat method-method default seperti CRUD dari laravel
+php artisan make:controller MahasiswaController -r -m Student -> membuat controller dan model yang saling terintegrasi
 php artisan migrate -> melakukan migrasi db di laravel
 php artisan migrate:rollback -> membatalkan migrasi terakhir db di laravel
 php artisan make:migration create_students_table
 php artisan make:model Student
+php artisan route:list ->untuk melihat daftar list pada route
+php artisan make:migration add_soft_delete_to_students -> membuat migration untuk menambahkan field di table students
 dump()/dd -> untuk melihat isi variabel/object
 code . -> untuk membuka vscode dari cmd
 
@@ -16,3 +19,7 @@ code . -> untuk membuka vscode dari cmd
 
 vscode command
 CTRL + P -> untuk menccari file
+
+
+Note :
+soft delete adalah istilah untuk menghapus data tapi data tidak hilang dan tetap ada di database

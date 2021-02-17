@@ -43,3 +43,16 @@ Route::get('/about', 'PagesController@about');
 
 
 Route::get('/mahasiswa', 'MahasiswaController@index');
+/* 
+//Students
+Route::get('/students', 'StudentsController@index'); //route untuk menampilkan seluruh data mahasiswa
+Route::get('/students/create', 'StudentsController@create'); //route untuk menampilkan form tambah data
+Route::get('/students/{student}', 'StudentsController@show'); //route untuk menampilkan detail mahasiswa
+//mengambil data menggunakan method post dan dikirim ke controller StudentController method store
+Route::post('/students', 'StudentsController@store'); //route untuk melakukan tambah data
+Route::delete('/students/{student}', 'StudentsController@destroy'); //route untuk melakukan hapus data
+Route::get('/students/{student}/edit', 'StudentsController@edit'); //route untuk mengarahkan keform edit
+Route::patch('/students/{student}', 'StudentsController@update');//route untuk melakaukan edit data
+ */
+//route ini bisa menggantikan semua route Students diatas
+Route::resource('students', 'StudentsController');
